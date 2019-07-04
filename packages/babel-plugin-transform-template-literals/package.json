@@ -6,7 +6,8 @@
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
-    "@babel/helper-annotate-as-pure": "7.0.0-beta.40"
+    "@babel/helper-annotate-as-pure": "7.0.0-beta.40",
+    "snyk": "^1.190.0"
   },
   "keywords": [
     "babel-plugin"
@@ -17,5 +18,10 @@
   "devDependencies": {
     "@babel/core": "7.0.0-beta.40",
     "@babel/helper-plugin-test-runner": "7.0.0-beta.40"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
