@@ -9,6 +9,12 @@
     "@babel/helper-function-name": "7.0.0-beta.40",
     "@babel/template": "7.0.0-beta.40",
     "@babel/traverse": "7.0.0-beta.40",
-    "@babel/types": "7.0.0-beta.40"
-  }
+    "@babel/types": "7.0.0-beta.40",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
