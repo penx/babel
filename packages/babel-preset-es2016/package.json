@@ -8,12 +8,18 @@
   "repository": "https://github.com/babel/babel/tree/master/packages/babel-preset-es2016",
   "main": "lib/index.js",
   "dependencies": {
-    "@babel/plugin-transform-exponentiation-operator": "7.0.0-beta.40"
+    "@babel/plugin-transform-exponentiation-operator": "7.0.0-beta.40",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "@babel/core": "7.0.0-beta.40"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.40"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
