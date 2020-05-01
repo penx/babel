@@ -7,6 +7,12 @@
   "main": "lib/index.js",
   "dependencies": {
     "@babel/types": "7.0.0-beta.40",
-    "esutils": "^2.0.0"
-  }
+    "esutils": "^2.0.0",
+    "snyk": "^*"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
