@@ -14,12 +14,18 @@
     "@babel/plugin-proposal-nullish-coalescing-operator": "7.0.0-beta.40",
     "@babel/plugin-proposal-optional-chaining": "7.0.0-beta.40",
     "@babel/plugin-proposal-pipeline-operator": "7.0.0-beta.40",
-    "@babel/preset-stage-2": "7.0.0-beta.40"
+    "@babel/preset-stage-2": "7.0.0-beta.40",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "@babel/core": "7.0.0-beta.40"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.40"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
