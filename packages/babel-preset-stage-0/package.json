@@ -10,12 +10,18 @@
   "dependencies": {
     "@babel/plugin-proposal-function-bind": "7.0.0-beta.40",
     "@babel/plugin-proposal-logical-assignment-operators": "7.0.0-beta.40",
-    "@babel/preset-stage-1": "7.0.0-beta.40"
+    "@babel/preset-stage-1": "7.0.0-beta.40",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "@babel/core": "7.0.0-beta.40"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.40"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
