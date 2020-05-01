@@ -12,7 +12,8 @@
     "@babel/plugin-transform-react-display-name": "7.0.0-beta.40",
     "@babel/plugin-transform-react-jsx": "7.0.0-beta.40",
     "@babel/plugin-transform-react-jsx-self": "7.0.0-beta.40",
-    "@babel/plugin-transform-react-jsx-source": "7.0.0-beta.40"
+    "@babel/plugin-transform-react-jsx-source": "7.0.0-beta.40",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "@babel/core": "7.0.0-beta.40"
@@ -21,5 +22,10 @@
     "@babel/core": "7.0.0-beta.40",
     "@babel/helper-plugin-test-runner": "7.0.0-beta.40",
     "@babel/helper-transform-fixture-test-runner": "7.0.0-beta.40"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
