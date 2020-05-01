@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@babel/helper-transform-fixture-test-runner > lodash':
+        patched: '2020-05-01T07:07:13.603Z'
+    - '@babel/helper-transform-fixture-test-runner > @babel/helper-fixtures > lodash':
+        patched: '2020-05-01T07:07:13.603Z'
+    - '@babel/helper-transform-fixture-test-runner > @babel/core > @babel/traverse > lodash':
+        patched: '2020-05-01T07:07:13.603Z'
+    - '@babel/helper-transform-fixture-test-runner > @babel/core > @babel/helpers > @babel/traverse > lodash':
+        patched: '2020-05-01T07:07:13.603Z'
+    - '@babel/helper-transform-fixture-test-runner > @babel/core > @babel/traverse > @babel/helper-function-name > @babel/template > lodash':
+        patched: '2020-05-01T07:07:13.603Z'
+    - '@babel/helper-transform-fixture-test-runner > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/template > lodash':
+        patched: '2020-05-01T07:07:13.603Z'
+    - '@babel/helper-transform-fixture-test-runner > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2020-05-01T07:07:13.603Z'
